@@ -112,9 +112,9 @@ final class ScraperCoreTest extends TestCase
         $this->expectException(\BadMethodCallException::class);
         $this->expectExceptionMessage(
             "BVP\HamanakoScraper\ScraperCore::__call() - " .
-            "Call to undefined method 'BVP\HamanakoScraper\ScraperCore::invalid()'."
+            "Call to undefined method 'BVP\HamanakoScraper\ScraperCore::ghost()'."
         );
 
-        $this->scraper->invalid(1, '2025-01-04');
+        $this->scraper->ghost(1, '2025-01-04');
     }
 }

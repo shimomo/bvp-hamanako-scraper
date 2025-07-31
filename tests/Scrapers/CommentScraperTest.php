@@ -60,9 +60,9 @@ final class CommentScraperTest extends TestCase
         $this->expectException(\BadMethodCallException::class);
         $this->expectExceptionMessage(
             "BVP\HamanakoScraper\Scrapers\BaseScraper::__call() - " .
-            "Call to undefined method 'BVP\HamanakoScraper\Scrapers\BaseScraper::invalid()'."
+            "Call to undefined method 'BVP\HamanakoScraper\Scrapers\BaseScraper::ghost()'."
         );
 
-        $this->scraper->invalid(1, '2025-01-04');
+        $this->scraper->ghost(1, '2025-01-04');
     }
 }
