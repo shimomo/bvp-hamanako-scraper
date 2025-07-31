@@ -107,7 +107,7 @@ final class ScraperCoreTest extends TestCase
     /**
      * @return void
      */
-    public function testInvalidWithRaceCode1AndDate20250104(): void
+    public function testThrowsExceptionWhenMethodDoesNotExist(): void
     {
         $this->expectException(\BadMethodCallException::class);
         $this->expectExceptionMessage(
